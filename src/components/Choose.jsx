@@ -24,7 +24,7 @@ class Choose extends React.Component {
     render() {
         return (
             <div className="select-stock">
-                <h1 className="select-stock__stock">{this.props.stock.name}</h1>
+                <h1 className="select-stock__title">{this.props.stock.name}</h1>
                 <input
                     className="select-stock__input"
                     placeholder="Full Name"
