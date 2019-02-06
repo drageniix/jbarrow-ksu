@@ -31,12 +31,12 @@
       "type": "image/png"
     }
   ],
-  "name": "WIA-KC | West Indian Association",
-  "short_name": "WIA-KC",
+  "name": "Janice Barrow - KSU",
+  "short_name": "KSU",
   "orientation": "portrait",
   "display": "standalone",
   "start_url": ".",
-  "description": "Bringing West Indian Culture Together in Kansas City",
+  "description": "Select your stock!",
   "background_color": "#ffffff",
-  "theme_color": "#68a08b"
+  "theme_color": "#fff"
 }

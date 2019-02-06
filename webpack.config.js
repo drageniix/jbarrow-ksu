@@ -12,12 +12,12 @@ const path = require('path');
 
 const outputPath = path.resolve(__dirname, 'public/');
 
-const appTitle = 'WIA-KC | West Indian Association';
-const themeColor = '#68a08b';
-const appDescription = 'Bringing West Indian Culture Together in Kansas City';
+const appTitle = 'Janice Barrow - KSU';
+const themeColor = '#fff';
+const appDescription = 'Select your stock!';
 const manifest = {
     name: appTitle,
-    short_name: 'WIA-KC',
+    short_name: 'KSU',
     description: appDescription,
     background_color: '#ffffff',
     theme_color: themeColor,

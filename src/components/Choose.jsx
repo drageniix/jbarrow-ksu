@@ -22,7 +22,7 @@ class Choose extends React.Component {
             <div className="select-stock">
                 <input
                     className="select-stock__input"
-                    placeholder="name"
+                    placeholder="Full Name"
                     onChange={this.onChange}
                 />
                 {this.props.error && (
