@@ -19,7 +19,7 @@ class HomePage extends React.Component {
                 </Fragment>
             )) || (
                 <div className="loading">
-                    <img src="https://i.giphy.com/media/xTk9ZvMnbIiIew7IpW/giphy.webp" />
+                    <img src="https://loading.io/spinners/balls/lg.circle-slack-loading-icon.gif" />
                 </div>
             )
         );

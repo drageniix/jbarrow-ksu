@@ -1,4 +1,4 @@
-import { CHOOSE_STOCK, UPDATE_STOCKS } from '../constants';
+import { CHOOSE_STOCK, UPDATE_STOCKS, SET_ERRORS } from '../constants';
 import db from '../../../database/firebase';
 
 export const updateStocks = stocks => ({
@@ -12,6 +12,13 @@ export const chooseStock = stock => ({
     type: CHOOSE_STOCK,
     payload: {
         stock
+    }
+});
+
+export const setErrors = error => ({
+    type: SET_ERRORS,
+    payload: {
+        error
     }
 });
 

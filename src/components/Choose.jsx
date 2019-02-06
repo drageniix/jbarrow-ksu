@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
-import { setStock } from '../redux/actions/common';
+import { setStock, setErrors } from '../redux/actions/common';
 
 class Choose extends React.Component {
     state = {
@@ -9,7 +9,11 @@ class Choose extends React.Component {
     };
 
     chooseStock = () => {
-        this.props.setStock(this.props.stock, this.state.student);
+        if (this.state.student && this.state.student.trim().includes(' ')) {
+            this.props.setStock(this.props.stock, this.state.student);
+        } else {
+            this.props.setErrors('Please enter your full name.');
+        }
     };
 
     onChange = e => {
@@ -20,6 +24,7 @@ class Choose extends React.Component {
     render() {
         return (
             <div className="select-stock">
+                <h1 className="select-stock__stock">{this.props.stock.name}</h1>
                 <input
                     className="select-stock__input"
                     placeholder="Full Name"
@@ -44,12 +49,14 @@ const mapStateToProps = state => ({
 });
 
 const mapDispatchToProps = {
-    setStock
+    setStock,
+    setErrors
 };
 
 Choose.propTypes = {
     stock: PropTypes.object,
     setStock: PropTypes.func,
+    setErrors: PropTypes.func,
     error: PropTypes.string
 };
 
