@@ -1,0 +1,32 @@
+.select-stock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__input {
+        text-align: center;
+        padding: 1rem;
+        font-size: 1.9rem;
+        font-family: inherit;
+        margin-bottom: 2rem;
+        font-weight: 300;
+    }
+
+    &__invalid {
+        margin: -2rem 0 2rem 0;
+        font-size: 1.4rem;
+        color: red;
+        font-weight: 400;
+    }
+
+    &__button {
+        letter-spacing: 1px;
+        font-weight: 400;
+        border: none;
+        border-radius: 0.5rem;
+        padding: 1rem;
+        background: #28a745;
+        cursor: pointer;
+        color: white;
+    }
+}

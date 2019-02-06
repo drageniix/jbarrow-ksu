@@ -1,0 +1,61 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    line-height: 1.7;
+    color: $color-grey-dark-2;
+    font-size: 1.6rem;
+}
+
+.section {
+    @include clearfix;
+
+    &--up {
+        animation: slideUp 1s;
+    }
+
+    &--down {
+        animation: slideDown 1s;
+    }
+
+    &__title {
+        padding-bottom: 1.25rem;
+        font-weight: 400;
+    }
+}
+
+.centered {
+    text-align: center;
+}
+.align-start {
+    text-align: start;
+}
+.align-end {
+    text-align: end;
+}
+
+.loading-icon {
+    width: 10rem;
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    display: inline-block;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+strong {
+    font-weight: 500;
+    color: $color-secondary;
+}
+
+.caricom__text a,
+.caricom__text a:active,
+.caricom__text a:link,
+.caricom__text a:hover .caricom__text a:visited {
+    cursor: pointer;
+    text-decoration: underline;
+    font-weight: 500;
+    color: $color-primary;
+}

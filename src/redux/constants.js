@@ -1,0 +1,2 @@
+export const CHOOSE_STOCK = 'CHOOSE_STOCK';
+export const UPDATE_STOCKS = 'UPDATE_STOCKS';

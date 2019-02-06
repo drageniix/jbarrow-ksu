@@ -1,0 +1,50 @@
+.stock {
+    display: flex;
+    text-align: start;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 70rem;
+    border-bottom: 1px solid black;
+
+    &:not(:last-child) {
+        margin-bottom: 1rem;
+    }
+
+    & > * {
+        padding: 1rem;
+        font-size: 1.8rem;
+        flex-shrink: 0;
+
+        &:not(:last-child) {
+            margin-right: 1rem;
+        }
+    }
+
+    &--name {
+        text-align: end;
+        flex-basis: 40%;
+        width: 40%;
+    }
+
+    &--symbol {
+        font-weight: 500;
+        flex-grow: 1;
+    }
+
+    &--student {
+        flex-basis: 30%;
+        width: 40%;
+    }
+
+    &--chose {
+        letter-spacing: 1px;
+        font-weight: 400;
+        border: none;
+        border-radius: 0.5rem;
+        padding: 1rem;
+        background: #28a745;
+        cursor: pointer;
+        color: white;
+    }
+}
